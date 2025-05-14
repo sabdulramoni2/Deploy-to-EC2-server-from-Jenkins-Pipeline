@@ -8,8 +8,23 @@ This project is divided into 3 part.
 ---
 
 ## **Features**
-- Installed Java on the server followed by Nexus on server, created a new Linux User for Nexus and changed the permissions of Nexus executable and the Sonatype-work folder.
-- Set Nexus configuration to run as a Nexus user and started Nexus with the Nexus User.
-- Configured Firewall rules to open port 8081 to access the Nexus server from the web browser.
-- Created new user on Nexus with permission to upload artifacts.
-- Build a jar file with Gradle and upload it to Nexus.
+
+### **Jenkins Pipeline to deploy on AWS EC2**
+
+#### **Deploy Java Maven App via Jenkins Pipeline on EC2 Instance**
+
+- Installed SSH agent plugin on Jenkins.
+- Created ssh credentials type for EC2 on Jenkins.
+- Configured Jenkinsfile to use the sshAgent and execute docker run command on EC2.
+- Docker Login to DockerHub or your other private Docker Repository (if you haven’t already).
+- Security Group configured: Added Jenkins IP Address and opened port to access Web App from Browser.
+- Deploy Webapp on EC2 Instance by executed Multi-Branch Pipeline.
+- Access Application on port 3080 in the browser
+
+#### **Deploy Java Maven App via Jenkins Pipeline on EC2 Instance**
+- Configured Jenkinsfile to build and deploy on EC2 Instance
+- Executed Multi-Branch Pipeline on Jenkins
+- Try to deploy an App with docker-compose and run a shell script
+
+
+### **Deploy using Docker Compose (Docker-Compose, ECR)**
