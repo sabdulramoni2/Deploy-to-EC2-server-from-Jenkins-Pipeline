@@ -16,15 +16,15 @@ This project is divided into 3 part.
    - Installed SSH agent plugin on Jenkins.
    - Created ssh credentials type for EC2 on Jenkins.
    - Configured Jenkinsfile to use the sshAgent and execute docker run command on EC2.
-       - Docker Login to DockerHub or your other private Docker Repository (if you haven’t already).
-       - Security Group configured: Added Jenkins IP Address and opened port to access Web App from Browser.
-       - Deploy Webapp on EC2 Instance by executed Multi-Branch Pipeline.
-       - Access Application on port 3080 in the browser
+   - Docker Login to DockerHub or your other private Docker Repository (if you haven’t already).
+   - Security Group configured: Added Jenkins IP Address and opened port to access Web App from Browser.
+   - Deploy Webapp on EC2 Instance by executed Multi-Branch Pipeline.
+   - Access Application on port 3080 in the browser
 
-#### **Deploy Java Maven App via Jenkins Pipeline on EC2 Instance**
-- Configured Jenkinsfile to build and deploy on EC2 Instance
-- Executed Multi-Branch Pipeline on Jenkins
-- Try to deploy an App with docker-compose and run a shell script
+- Deploy Java Maven App via Jenkins Pipeline on EC2 Instance**
+   - Configured Jenkinsfile to build and deploy on EC2 Instance
+   - Executed Multi-Branch Pipeline on Jenkins
+   - Try to deploy an App with docker-compose and run a shell script
 
 
 ### **Deploy using Docker Compose (Docker-Compose, ECR)**
