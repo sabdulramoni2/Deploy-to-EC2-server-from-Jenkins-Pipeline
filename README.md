@@ -28,3 +28,15 @@ This project is divided into 3 part.
 
 
 ### **Deploy using Docker Compose (Docker-Compose, ECR)**
+- Deploy Java Maven App via Jenkins Pipeline on EC2 Instance using Docker-Compose File
+   - Installed Docker-Compose on EC2 Instance
+   - Created docker-compose.yaml file
+   - Configured Jenkinsfile to execute docker-compose command
+   - Executed Jenkins Pipeline and deploy to AWS EC2 Instance
+   - Improvement: Extract to Shell Script
+
+### **Complete Pipeline (Docker-Compose, ECR, Dynamic versioning)**
+- as before with dynamic versioning
+   - Adjusted Jenkinsfile to include dynamic versioning
+   - Executed Jenkins Pipeline and deploy to AWS EC2 Instance
+
