@@ -11,11 +11,11 @@ This project is divided into 3 part.
 
 ### **Jenkins Pipeline to deploy on AWS EC2**
 
-       #### **Deploy Java Maven App via Jenkins Pipeline on EC2 Instance**
+#### **Deploy Java Maven App via Jenkins Pipeline on EC2 Instance**
 
-       - Installed SSH agent plugin on Jenkins.
-       - Created ssh credentials type for EC2 on Jenkins.
-       - Configured Jenkinsfile to use the sshAgent and execute docker run command on EC2.
+   - Installed SSH agent plugin on Jenkins.
+   - Created ssh credentials type for EC2 on Jenkins.
+   - Configured Jenkinsfile to use the sshAgent and execute docker run command on EC2.
        - Docker Login to DockerHub or your other private Docker Repository (if you haven’t already).
        - Security Group configured: Added Jenkins IP Address and opened port to access Web App from Browser.
        - Deploy Webapp on EC2 Instance by executed Multi-Branch Pipeline.
